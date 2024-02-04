@@ -12,6 +12,6 @@ This project is not ready for contributions.
 
 ## Progress
 
-- API (using Cloudflare Workers) ✅
+- API (using Hono + Cloudflare Workers) ✅
 - SQL database (using Cloudflare D1) ✅
 - Frontend (using Remix + Vite) ❌
