@@ -10,6 +10,20 @@ A proof of concept todo app (yes, yet another TODO app demo) using Cloudflare wi
 
 This project is not ready for contributions.
 
+## Prerequisites
+
+- NodeJS
+
+## Getting started
+
+### Secrets
+
+Secrets are managed by setting them in `.dev.vars`. [Check out the Cloudflare docs](https://developers.cloudflare.com/workers/configuration/secrets/#secrets-in-development). Here's an example with the keys required for this project to run (replace `SECRET_HERE` with the secret values):
+
+```
+JWT_CLIENT_ID=SECRET_HERE
+```
+
 ## Progress
 
 - API (using Hono + Cloudflare Workers) ✅
