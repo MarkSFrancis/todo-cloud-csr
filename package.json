@@ -1,0 +1,22 @@
+{
+	"name": "todo-cloud-csr",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"db:generate": "drizzle-kit generate:sqlite",
+		"db:up": "wrangler d1 migrations apply prod --local",
+		"db:up:prod": "wrangler d1 migrations apply prod"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240129.0",
+		"drizzle-kit": "^0.20.14",
+		"typescript": "^5.0.4",
+		"wrangler": "^3.0.0"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.29.3"
+	}
+}
